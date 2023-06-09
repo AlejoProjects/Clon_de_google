@@ -1,15 +1,18 @@
+
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
+    position: fixed;
+    display: grid;
+    grid-template-rows:1fr 4fr ;
+    width: 100%;
+    height: auto;
+    width:100%;
 }
 
 .header_menu {
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
 
 }
 .element {
@@ -29,7 +32,7 @@ body {
 }
 .gb_g {
     width:3%;
-    height:5%;
+    height:15%;
     margin-right: 10px;
     border-radius: 100px;
 }
@@ -38,10 +41,11 @@ body {
 }
 
 .main_container {
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    height:650px;
 }
 #logo {
    margin-top: 20%;
@@ -56,14 +60,15 @@ body {
     border-radius: 40px;
     border-color: rgb(189, 188, 188);
     margin-top: 5%;
-    width:60%;
-    height:50px;
+    width:80%;
+
 }
 .search_container:hover {
     box-shadow: 2px 2px 2px 2px rgb(216, 216, 216);
 }
 #search_space {
-    width:70%;
+    width:100%;
+    height:5%;
     border: none;
     outline: none;
    
@@ -104,32 +109,36 @@ body {
     justify-content: flex-start;
 }
 .goxjub {
-    width:10%;
-    height:60%;
+    width:5%;
+    height:40%;
+    padding:1%;
     
 }
 .footer {
-    margin-top:20%;
+
     justify-self: flex-end;
     background-color: rgb(243, 243, 243);
-    position: relative;
     display:flex;
     flex-direction: column;
-    height:300px;
+    justify-content: flex-end;
+    margin-top: 5%;
+    width:100%;
+    height: 100%;
+
 
 }
 .texto {
     color: grey;
 }
-#country {
-    margin-left:5%;
-    
-}
+
 .final {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:20px;
+}
+#top_part {
+    border-top: 2px solid rgb(175, 175, 175);
 }
 .texto:hover {
     text-decoration: underline;
